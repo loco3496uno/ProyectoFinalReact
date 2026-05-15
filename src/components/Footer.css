@@ -1,0 +1,27 @@
+.footer {
+  background: var(--surface);
+  border-top: 1px solid var(--border);
+  margin-top: auto;
+}
+
+.footer-inner {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 2rem;
+  padding: 2.5rem 1.5rem;
+}
+
+.footer-brand p { font-size: 0.875rem; color: var(--text-2); line-height: 1.6; margin-top: 0.5rem; max-width: 260px; }
+.footer-logo { font-family: var(--font-head); font-size: 1.1rem; font-weight: 900; color: var(--text); }
+
+.footer-links { display: flex; flex-direction: column; gap: 0.5rem; }
+.footer-links h4 { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-2); margin-bottom: 0.25rem; }
+.footer-links a { font-size: 0.875rem; color: var(--text-2); transition: color 0.2s; }
+.footer-links a:hover { color: var(--primary); }
+
+.footer-bottom { padding: 1rem 1.5rem; border-top: 1px solid var(--border); }
+.footer-bottom p { font-size: 0.8rem; color: var(--text-3); text-align: center; }
+
+@media (max-width: 600px) {
+  .footer-inner { grid-template-columns: 1fr; gap: 1.5rem; }
+}

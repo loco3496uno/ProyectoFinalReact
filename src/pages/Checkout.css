@@ -1,0 +1,35 @@
+.checkout-steps { display: flex; align-items: center; gap: 0.5rem; margin-bottom: 2rem; }
+.step { display: flex; align-items: center; gap: 0.5rem; font-size: 0.875rem; font-weight: 600; color: var(--text-3); transition: color 0.3s; }
+.step.active { color: var(--primary); }
+.step-num { width: 28px; height: 28px; border-radius: 50%; background: var(--surface2); border: 2px solid var(--border); display: flex; align-items: center; justify-content: center; font-size: 0.8rem; font-weight: 700; transition: all 0.3s; }
+.step.active .step-num { background: var(--primary); border-color: var(--primary); color: white; }
+.step-line { flex: 1; max-width: 60px; height: 2px; background: var(--border); }
+
+.checkout-layout { display: grid; grid-template-columns: 1fr 320px; gap: 2rem; align-items: start; }
+.checkout-form { display: flex; flex-direction: column; gap: 1.5rem; }
+.form-section { padding: 1.75rem; }
+.form-title { font-family: var(--font-head); font-size: 1rem; font-weight: 700; margin-bottom: 1.25rem; }
+.fields-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+
+.field { display: flex; flex-direction: column; gap: 0.3rem; }
+.field-label { font-size: 0.78rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-2); }
+.field-error { font-size: 0.75rem; color: var(--red); }
+
+.card-preview {
+  background: linear-gradient(135deg, #1a1a3e, #2d1b69);
+  border-radius: 12px;
+  padding: 1.5rem;
+  border: 1px solid rgba(124,58,237,0.3);
+}
+.card-chip { font-size: 1.5rem; margin-bottom: 1rem; }
+.card-num { font-family: var(--font-head); font-size: 1.1rem; letter-spacing: 0.15em; color: var(--text); margin-bottom: 0.75rem; }
+.card-meta { display: flex; justify-content: space-between; font-size: 0.8rem; color: var(--text-2); text-transform: uppercase; letter-spacing: 0.08em; }
+
+.checkout-btns { display: flex; gap: 1rem; margin-top: 1.5rem; justify-content: space-between; }
+.checkout-summary { padding: 1.5rem; position: sticky; top: 90px; }
+
+@media (max-width: 768px) {
+  .checkout-layout { grid-template-columns: 1fr; }
+  .checkout-summary { position: static; }
+  .fields-grid { grid-template-columns: 1fr; }
+}
