@@ -70,7 +70,7 @@ export default function Shop() {
         </div>
 
         <div className="sidebar-section">
-          <h3 className="sidebar-title">🗂️ Categoría</h3>
+          <h3 className="sidebar-title"> Categoría</h3>
           {categories.map(cat => (
             <button key={cat} className={`cat-btn ${category === cat ? 'active' : ''}`} onClick={() => handleCat(cat)}>
               {cat}
@@ -79,7 +79,7 @@ export default function Shop() {
         </div>
 
         <div className="sidebar-section">
-          <h3 className="sidebar-title">💵 Precio máx: <span style={{ color: 'var(--accent)' }}>${maxPrice}</span></h3>
+          <h3 className="sidebar-title"> Precio máx: <span style={{ color: 'var(--accent)' }}>${maxPrice}</span></h3>
           <input type="range" min={20} max={800} step={10} value={maxPrice} onChange={e => setMaxPrice(+e.target.value)} className="price-range" />
           <div className="price-labels"><span>$20</span><span>$800</span></div>
         </div>
