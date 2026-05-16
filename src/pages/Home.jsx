@@ -34,7 +34,6 @@ export default function Home() {
           </div>
           <div className="hero-stats">
             <div className="hstat"><span className="hstat-n">+{products.length}</span><span className="hstat-l">Productos</span></div>
-            <div className="hstat"><span className="hstat-n">4.8★</span><span className="hstat-l">Valoración</span></div>
             <div className="hstat"><span className="hstat-n">24h</span><span className="hstat-l">Envío</span></div>
           </div>
         </div>
