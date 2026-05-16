@@ -24,7 +24,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="footer-bottom container">
-        <p>© 2026 GameStore · Hecho con React + Vite 🚀</p>
+        <p>© 2026 GameStore · Hecho con React y Vite </p>
       </div>
     </footer>
   )
