@@ -20,7 +20,7 @@ export default function Home() {
       <section className="hero">
         <div className="hero-bg" />
         <div className="container hero-content">
-          <span className="hero-tag">⚡ Nueva temporada</span>
+          <span className="hero-tag">Nueva temporada</span>
           <h1 className="hero-title">
             El mejor gaming<br />
             <span className="hero-accent">comienza aquí</span>
@@ -42,7 +42,7 @@ export default function Home() {
 
       {/* Categorías */}
       <section className="container home-section">
-        <h2 className="section-title">🗂️ Categorías</h2>
+        <h2 className="section-title">Categorías</h2>
         <div className="cat-grid">
           {categories.map(c => (
             <Link to={c.to} key={c.name} className="cat-card" style={{ '--cat-color': c.color }}>
@@ -56,7 +56,7 @@ export default function Home() {
       {/* Destacados */}
       <section className="container home-section">
         <div className="section-header">
-          <h2 className="section-title">🏆 Más destacados</h2>
+          <h2 className="section-title">Más destacados</h2>
           <Link to="/shop" className="btn btn-ghost btn-sm">Ver todos →</Link>
         </div>
         <div className="products-grid">
@@ -69,7 +69,7 @@ export default function Home() {
         <section className="container home-section">
           <div className="deal-banner">
             <div className="deal-info">
-              <span className="badge badge-red">🔥 Oferta especial</span>
+              <span className="badge badge-red">Oferta especial</span>
               <h3>{deals[0].name}</h3>
               <p>{deals[0].description}</p>
               <div className="deal-price">
