@@ -1,6 +1,6 @@
 
 
-# Proyecto final en React con Vite.
+# Proyecto final en React
 
 ## Integrantes:
 Juan Camilo Murcia Sutaneme 20242678011 jcmurcias@udistrital.edu.co
